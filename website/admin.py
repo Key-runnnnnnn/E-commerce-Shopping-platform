@@ -4,6 +4,7 @@ from .forms import ShopItemsForm, OrderForm
 from werkzeug.utils import secure_filename
 from .models import Product, Order, Customer
 from . import db
+import os
 
 
 admin = Blueprint('admin', __name__)
@@ -31,7 +32,13 @@ def add_shop_items():
 
             file_name = secure_filename(file.filename)
 
-            file_path = f'./media/{file_name}'
+            # Create absolute path to media folder
+            basedir = os.path.abspath(os.path.dirname(__file__))
+            media_dir = os.path.join(basedir, '..', 'media')
+            file_path = os.path.join(media_dir, file_name)
+            
+            # Ensure media directory exists
+            os.makedirs(media_dir, exist_ok=True)
 
             file.save(file_path)
 
@@ -42,7 +49,8 @@ def add_shop_items():
             new_shop_item.in_stock = in_stock
             new_shop_item.flash_sale = flash_sale
 
-            new_shop_item.product_picture = file_path
+            # Store relative path for database
+            new_shop_item.product_picture = f'/media/{file_name}'
 
             try:
                 db.session.add(new_shop_item)
@@ -92,7 +100,14 @@ def update_item(item_id):
             file = form.product_picture.data
 
             file_name = secure_filename(file.filename)
-            file_path = f'./media/{file_name}'
+            
+            # Create absolute path to media folder
+            basedir = os.path.abspath(os.path.dirname(__file__))
+            media_dir = os.path.join(basedir, '..', 'media')
+            file_path = os.path.join(media_dir, file_name)
+            
+            # Ensure media directory exists
+            os.makedirs(media_dir, exist_ok=True)
 
             file.save(file_path)
 
@@ -102,7 +117,7 @@ def update_item(item_id):
                                                                 previous_price=previous_price,
                                                                 in_stock=in_stock,
                                                                 flash_sale=flash_sale,
-                                                                product_picture=file_path))
+                                                                product_picture=f'/media/{file_name}'))
 
                 db.session.commit()
                 flash(f'{product_name} updated Successfully')

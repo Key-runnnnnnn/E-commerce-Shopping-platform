@@ -203,6 +203,18 @@ def search():
     return render_template('search.html')
 
 
+@views.route('/about-us')
+def about_us():
+    return render_template('about.html', cart=Cart.query.filter_by(customer_link=current_user.id).all()
+                           if current_user.is_authenticated else [])
+
+
+@views.route('/contact-us')
+def contact_us():
+    return render_template('contact.html', cart=Cart.query.filter_by(customer_link=current_user.id).all()
+                           if current_user.is_authenticated else [])
+
+
 
 
 

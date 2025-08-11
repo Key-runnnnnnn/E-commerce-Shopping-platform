@@ -141,16 +141,17 @@
                     {% for item in items %}
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                         <div class="product-card animate__animated animate__fadeInUp hover-lift"
-                            style="animation-delay: {{ loop.index0 * 0.1 }}s">
-                            <img src="{{ item.product_picture }}" alt="{{ item.product_name }}" class="product-image">
+                            data-delay="{{ loop.index0 * 0.1 }}">
+                            <img src="/media/{{ item.product_picture }}" alt="{{ item.product_name }}"
+                                class="product-image">
 
                             <h6 class="product-name">{{ item.product_name }}</h6>
 
                             <div class="price-container">
                                 <div>
-                                    <h5 class="current-price">Ksh {{ "{:,.0f}".format(item.current_price) }}</h5>
+                                    <h5 class="current-price">{{ item.current_price | currency }}</h5>
                                     {% if item.previous_price and item.previous_price > item.current_price %}
-                                    <p class="previous-price">Ksh {{ "{:,.0f}".format(item.previous_price) }}</p>
+                                    <p class="previous-price">{{ item.previous_price | currency }}</p>
                                     {% endif %}
                                 </div>
                             </div>
@@ -218,6 +219,14 @@
 </div>
 
 <script>
+    // Set animation delays for product cards
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.product-card[data-delay]').forEach(card => {
+            const delay = card.getAttribute('data-delay');
+            card.style.animationDelay = delay + 's';
+        });
+    });
+
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {

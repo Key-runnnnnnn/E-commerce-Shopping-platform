@@ -25,6 +25,14 @@ def create_app():
 
     db.init_app(app)
 
+    # Add custom template filter for currency formatting
+    @app.template_filter('currency')
+    def currency_filter(amount):
+        """Format amount as Indian Rupees"""
+        if amount is None:
+            return "Rs 0"
+        return f"Rs {amount:,.0f}"
+
     @app.errorhandler(404)
     def page_not_found(error):
         return render_template('404.html')

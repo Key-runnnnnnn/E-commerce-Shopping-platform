@@ -38,10 +38,11 @@
             <td>{{ order.customer.username }}</td>
             <td>{{ order.customer.email }}</td>
             <td>{{ order.product.product_name }}</td>
-            <td>{{ order.price }}</td>
+            <td>{{ order.price | currency }}</td>
             <td>{{ order.quantity }}</td>
 
-            <td><img src="{{ order.product.product_picture }}" alt="" style="height: 50px; width: 50px; border-radius: 2px;"></td>
+            <td><img src="/media/{{ order.product.product_picture }}" alt=""
+                    style="height: 50px; width: 50px; border-radius: 2px;"></td>
 
 
             <td>{{ order.status}}</td>

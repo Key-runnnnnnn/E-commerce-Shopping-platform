@@ -1,0 +1,427 @@
+{% extends 'base.html' %}
+
+{% block title %} About Us - FlaskShopper {% endblock %}
+
+{% block body %}
+
+<!-- Hero Section -->
+<div class="about-hero-section">
+  <div class="container">
+    <div class="row align-items-center min-vh-50">
+      <div class="col-lg-6">
+        <div class="hero-content animate__animated animate__fadeInLeft">
+          <h1 class="display-4 fw-bold text-white mb-4">About FlaskShopper</h1>
+          <p class="lead text-white-50 mb-4">Your trusted online shopping destination since 2023. We're passionate about
+            bringing you quality products at unbeatable prices with exceptional customer service.</p>
+          <a href="#our-story" class="btn btn-outline-light btn-lg">
+            <i class="fas fa-arrow-down me-2"></i>
+            Learn More
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="animate__animated animate__fadeInRight">
+          <img src="/static/images/center.gif" alt="About FlaskShopper" class="img-fluid rounded-3 shadow-lg">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Our Story Section -->
+<section id="our-story" class="py-5 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center mb-5">
+        <h2 class="section-title">Our Story</h2>
+        <p class="lead text-muted">FlaskShopper was born from a simple idea: make quality products accessible to
+          everyone, everywhere.</p>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4">
+        <div class="story-content">
+          <h3 class="h4 fw-bold mb-3">How It All Started</h3>
+          <p class="text-muted mb-4">Founded in 2023, FlaskShopper began as a vision to revolutionize online shopping in
+            Kenya. We saw the need for a platform that combines quality products, competitive prices, and exceptional
+            customer service.</p>
+
+          <h3 class="h4 fw-bold mb-3">Our Mission</h3>
+          <p class="text-muted mb-4">To provide customers with an unparalleled shopping experience through our carefully
+            curated selection of products, from electronics to household essentials, all backed by our commitment to
+            quality and affordability.</p>
+
+          <h3 class="h4 fw-bold mb-3">Looking Forward</h3>
+          <p class="text-muted">We're constantly evolving, adding new products, improving our platform, and expanding
+            our reach to serve customers across East Africa and beyond.</p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="story-image">
+          <img src="/static/images/techweek.png" alt="Our Journey" class="img-fluid rounded-3 shadow">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Values Section -->
+<section class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center mb-5">
+        <h2 class="section-title">Our Values</h2>
+        <p class="lead text-muted">The principles that guide everything we do at FlaskShopper</p>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="value-card text-center h-100">
+          <div class="value-icon">
+            <i class="fas fa-shield-alt fa-3x text-primary mb-4"></i>
+          </div>
+          <h4 class="fw-bold mb-3">Quality Assurance</h4>
+          <p class="text-muted">Every product is carefully vetted to ensure it meets our high standards for quality and
+            authenticity.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="value-card text-center h-100">
+          <div class="value-icon">
+            <i class="fas fa-heart fa-3x text-danger mb-4"></i>
+          </div>
+          <h4 class="fw-bold mb-3">Customer First</h4>
+          <p class="text-muted">Your satisfaction is our priority. We go above and beyond to ensure you have the best
+            shopping experience.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="value-card text-center h-100">
+          <div class="value-icon">
+            <i class="fas fa-rocket fa-3x text-success mb-4"></i>
+          </div>
+          <h4 class="fw-bold mb-3">Innovation</h4>
+          <p class="text-muted">We continuously improve our platform and services to provide you with cutting-edge
+            shopping technology.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="value-card text-center h-100">
+          <div class="value-icon">
+            <i class="fas fa-leaf fa-3x text-info mb-4"></i>
+          </div>
+          <h4 class="fw-bold mb-3">Sustainability</h4>
+          <p class="text-muted">We're committed to environmentally responsible practices and supporting sustainable
+            products.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="value-card text-center h-100">
+          <div class="value-icon">
+            <i class="fas fa-handshake fa-3x text-warning mb-4"></i>
+          </div>
+          <h4 class="fw-bold mb-3">Trust & Integrity</h4>
+          <p class="text-muted">We build lasting relationships through transparency, honesty, and reliable service.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="value-card text-center h-100">
+          <div class="value-icon">
+            <i class="fas fa-globe-africa fa-3x text-purple mb-4"></i>
+          </div>
+          <h4 class="fw-bold mb-3">Community</h4>
+          <p class="text-muted">We're proud to support local communities and contribute to economic growth across East
+            Africa.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Statistics Section -->
+<section class="py-5 bg-primary text-white">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="stat-item">
+          <h2 class="display-4 fw-bold mb-2" data-count="10000">0</h2>
+          <p class="lead">Happy Customers</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="stat-item">
+          <h2 class="display-4 fw-bold mb-2" data-count="500">0</h2>
+          <p class="lead">Products Available</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="stat-item">
+          <h2 class="display-4 fw-bold mb-2" data-count="50">0</h2>
+          <p class="lead">Cities Served</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="stat-item">
+          <h2 class="display-4 fw-bold mb-2" data-count="2">0</h2>
+          <p class="lead">Years of Excellence</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Team Section -->
+<section class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center mb-5">
+        <h2 class="section-title">Meet Our Team</h2>
+        <p class="lead text-muted">The passionate people behind FlaskShopper's success</p>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="team-card text-center">
+          <div class="team-image mb-3">
+            <img src="/static/images/center.gif" alt="CEO" class="img-fluid rounded-circle"
+              style="width: 150px; height: 150px; object-fit: cover;">
+          </div>
+          <h4 class="fw-bold mb-2">John Kiprotich</h4>
+          <p class="text-primary mb-3">Chief Executive Officer</p>
+          <p class="text-muted small">Visionary leader with 10+ years of e-commerce experience, passionate about
+            transforming online shopping in Africa.</p>
+          <div class="team-social">
+            <a href="#" class="btn btn-outline-primary btn-sm me-2"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="btn btn-outline-primary btn-sm me-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="btn btn-outline-primary btn-sm"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="team-card text-center">
+          <div class="team-image mb-3">
+            <img src="/static/images/center.gif" alt="CTO" class="img-fluid rounded-circle"
+              style="width: 150px; height: 150px; object-fit: cover;">
+          </div>
+          <h4 class="fw-bold mb-2">Sarah Wanjiku</h4>
+          <p class="text-primary mb-3">Chief Technology Officer</p>
+          <p class="text-muted small">Tech innovator and full-stack developer, ensuring our platform stays at the
+            cutting edge of e-commerce technology.</p>
+          <div class="team-social">
+            <a href="#" class="btn btn-outline-primary btn-sm me-2"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="btn btn-outline-primary btn-sm me-2"><i class="fab fa-github"></i></a>
+            <a href="#" class="btn btn-outline-primary btn-sm"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="team-card text-center">
+          <div class="team-image mb-3">
+            <img src="/static/images/center.gif" alt="Head of Customer Success" class="img-fluid rounded-circle"
+              style="width: 150px; height: 150px; object-fit: cover;">
+          </div>
+          <h4 class="fw-bold mb-2">Michael Ochieng</h4>
+          <p class="text-primary mb-3">Head of Customer Success</p>
+          <p class="text-muted small">Customer champion dedicated to ensuring every FlaskShopper experience exceeds
+            expectations.</p>
+          <div class="team-social">
+            <a href="#" class="btn btn-outline-primary btn-sm me-2"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="btn btn-outline-primary btn-sm me-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="btn btn-outline-primary btn-sm"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-5 bg-gradient-primary text-white">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-8">
+        <h2 class="display-5 fw-bold mb-3">Ready to Shop with Us?</h2>
+        <p class="lead mb-0">Join thousands of satisfied customers and discover amazing products at unbeatable prices.
+        </p>
+      </div>
+      <div class="col-lg-4 text-lg-end">
+        <a href="/" class="btn btn-light btn-lg">
+          <i class="fas fa-shopping-bag me-2"></i>
+          Start Shopping
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about-hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 2px;
+  }
+
+  .value-card {
+    padding: 2rem 1.5rem;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #f8f9fa;
+  }
+
+  .value-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  }
+
+  .team-card {
+    padding: 2rem 1.5rem;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #f8f9fa;
+  }
+
+  .team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  }
+
+  .stat-item h2 {
+    background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gradient-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+
+  .text-purple {
+    color: #6f42c1 !important;
+  }
+
+  .story-content h3 {
+    color: #2c3e50;
+  }
+
+  .story-image img {
+    border: 5px solid white;
+  }
+
+  @media (max-width: 768px) {
+    .about-hero-section {
+      min-height: 50vh;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 2rem;
+    }
+
+    .value-card,
+    .team-card {
+      margin-bottom: 2rem;
+    }
+  }
+
+  /* Counter Animation */
+  .stat-item h2 {
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Counter animation
+    const counters = document.querySelectorAll('[data-count]');
+
+    const animateCounter = (counter) => {
+      const target = parseInt(counter.getAttribute('data-count'));
+      const increment = target / 100;
+      let current = 0;
+
+      const updateCounter = () => {
+        if (current < target) {
+          current += increment;
+          counter.textContent = Math.floor(current);
+          requestAnimationFrame(updateCounter);
+        } else {
+          counter.textContent = target.toLocaleString();
+        }
+      };
+
+      updateCounter();
+    };
+
+    // Intersection Observer for counter animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const counter = entry.target.querySelector('[data-count]');
+          if (counter && !counter.classList.contains('animated')) {
+            counter.classList.add('animated');
+            setTimeout(() => animateCounter(counter), 200);
+          }
+        }
+      });
+    }, { threshold: 0.5 });
+
+    counters.forEach(counter => {
+      observer.observe(counter.parentElement);
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  });
+</script>
+
+{% endblock %}
